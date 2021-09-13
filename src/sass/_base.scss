@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Calibre-Black';
+    src:url('../font/Calibre-Black.woff') format('woff'),
+        url('../font/Calibre-Black.ttf') format('truetype');
+    font-weight: black;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Calibre-SemiBold';
     src:url('../font/Calibre-SemiBold.woff') format('woff'),
         url('../font/Calibre-SemiBold.ttf') format('truetype'),
@@ -7,8 +16,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
 
 @font-face {
     font-family: 'Calibre-Medium';
@@ -36,6 +43,7 @@
 $primary-font: 'Calibre-Regular', sans-serif;
 $secondary-font: 'Calibre-SemiBold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
+$black-font: 'Calibre-Black', sans-serif;
 
 //colors
 $primary-color: #09F755;
@@ -135,42 +143,28 @@ section {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        height: 17vh;
+        width: auto;
+
+        @media only screen and (max-width: 600px) {
+            width: 40vw;
+            height: auto;
+        }
     }
     #logo path:nth-child(1) {
-        stroke-width: 1;
-        stroke-dasharray: 393.5;
-        stroke-dashoffset: 393.5;
+        stroke-dasharray: 885;
+        stroke-dashoffset: 885;
         animation: line-anim 2s ease forwards;
     }
     #logo path:nth-child(2) {
-        stroke-width: 1;
-        stroke-dasharray: 430;
-        stroke-dashoffset: 430;
-        animation: line-anim 2s ease forwards .3s;
+        stroke-dasharray: 1345;
+        stroke-dashoffset: 1345;
+        animation: line-anim 2s ease forwards .5s;
     }
     #logo path:nth-child(3) {
-        stroke-width: 1;
-        stroke-dasharray: 413;
-        stroke-dashoffset: 413;
-        animation: line-anim 2s ease forwards .6s;
-    }
-    #logo path:nth-child(4) {
-        stroke-width: 1;
-        stroke-dasharray: 290;
-        stroke-dashoffset: 290;
-        animation: line-anim 2s ease forwards .9s;
-    }
-    #logo path:nth-child(5) {
-        stroke-width: 1;
-        stroke-dasharray: 187;
-        stroke-dashoffset: 187;
-        animation: line-anim 2s ease forwards 1.2s;
-    }
-    #logo path:nth-child(6) {
-        stroke-width: 1;
-        stroke-dasharray: 393;
-        stroke-dashoffset: 393;
-        animation: line-anim 2s ease forwards 1.5s;
+        stroke-dasharray: 425;
+        stroke-dashoffset: 425;
+        animation: line-anim 2s ease forwards .8s;
     }
 
     svg {
@@ -252,22 +246,23 @@ section {
     button
 ---------------------------*/
 .cta {
-    background-color: $primary-color;
-    padding: 1.5rem 4rem;
+    background-color: transparent;
+    border: 1.5px solid $white;
+    color: $white;
+    padding: 1.6rem 3.5rem 1.4rem;
     text-decoration: none;
-    color: $black;
     border-radius: 10rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-family: $secondary-font;
-    letter-spacing: 3px;
-    border: 1.5px solid transparent;
+    letter-spacing: 2.5px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    
     &:hover {
-        background-color: transparent;
-        border: 1.5px solid $white;
-        color: $white;
+        background-color: $primary-color;
+        border: 1.5px solid transparent;
+        color: $black;
     }
 }
 
