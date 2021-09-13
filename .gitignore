@@ -2,4 +2,3 @@ node_modules
 /development
 /.vscode
 /.cache
-dist/
