@@ -9,7 +9,7 @@
     "deploy": "gh-pages-deploy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Divyanshu Mahajan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.2",
