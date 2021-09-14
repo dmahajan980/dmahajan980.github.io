@@ -1,3 +1,4 @@
-# adeolaadeoti-portfolio
-My personal website
-https://adeolaadeoti.netlify.app
+# Porfolio
+
+Hosted at  
+[www.divyanshumahajan.tech](https://www.divyanshumahajan.tech)
