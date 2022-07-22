@@ -2,20 +2,20 @@ import './sass/main.scss';
 
 // preloader 
 const preloaderTL = gsap.timeline();
-preloaderTL.to('.preloader svg', {yPercent: -20, opacity: 0, delay: 4})
-preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: '-=3'})
+preloaderTL.to('.preloader svg', {yPercent: -20, opacity: 0, delay: 4});
+preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: '-=3'});
 
 // open all social links in new tab
-let socialLinks = document.querySelectorAll('.social-links--box a');
-socialLinks.forEach(link => {
-    link.target = '_blank';
-});
-
+const socialLinks = document.querySelectorAll('.social-links--box a');
+socialLinks.forEach(link => link.target = '_blank');
 
 // custom cursor
 const cursor = document.querySelector('.cursor');
-window.onmousemove = (e) => {
-    cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px; z-index: 2;`)    
+window.onmousemove = ({ pageX, pageY }) => {
+    console.log(pageY)
+    cursor.style.top = `${pageY}px`;
+    cursor.style.left = `${pageX}px`;
+    cursor.style.zIndex = 2;
 }
 
 // navigation

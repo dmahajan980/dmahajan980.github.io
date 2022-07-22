@@ -23,23 +23,35 @@
       color: $white;
     }
   }
-  .work-box:nth-child(1) {
-    background: linear-gradient(180deg, #9BE7FF 0%, #4582e4 100%);
-  }
-  .work-box:nth-child(2) {
-    background: linear-gradient(75deg, #f3cbab, #feedca);
-  }
-  .work-box:nth-child(3) {
-    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-  }
-  .work-box:nth-child(4) {
-    background: linear-gradient(to bottom, #efa971, #e4cafe);
-  }
-  .work-box:nth-child(5) {
-    background: linear-gradient(to right, #b1e5f9, #f4d2fe);
-  }
-  .work-box:nth-child(6) {
-    background: linear-gradient(to right, #f3cbab, #feedca);
+
+  .work-box {
+    &:nth-child(1) {
+      background: linear-gradient(180deg, #BCBDFF 0%, #4E4E86 100%);
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(180deg, #9BE7FF 0%, #4582e4 100%);
+    }
+
+    &:nth-child(3) {
+      background: linear-gradient(75deg, #f3cbab, #feedca);
+    }
+
+    &:nth-child(4) {
+      background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    }
+
+    &:nth-child(5) {
+      background: linear-gradient(to bottom, #efa971, #e4cafe);
+    }
+
+    &:nth-child(6) {
+      background: linear-gradient(to right, #b1e5f9, #f4d2fe);
+    }
+
+    &:nth-child(7) {
+      background: linear-gradient(to right, #f3cbab, #feedca);
+    }
   }
 
   &-box__date {

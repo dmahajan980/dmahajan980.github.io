@@ -8,9 +8,9 @@
 }
 
 @font-face {
-  font-family: 'Calibre-SemiBold';
-  src: url('../font/Calibre-SemiBold.woff') format('woff'),
-    url('../font/Calibre-SemiBold.ttf') format('truetype'),
+  font-family: 'Calibre-Semibold';
+  src: url('../font/Calibre-Semibold.woff') format('woff'),
+    url('../font/Calibre-Semibold.ttf') format('truetype'),
     url('../font/Calibre-Semibold.svg#Calibre-Semibold') format('svg');
   font-weight: bold;
   font-style: normal;
@@ -41,7 +41,7 @@
 
 //fonts
 $primary-font: 'Calibre-Regular', sans-serif;
-$secondary-font: 'Calibre-SemiBold', sans-serif;
+$secondary-font: 'Calibre-Semibold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
 $black-font: 'Calibre-Black', sans-serif;
 
@@ -73,6 +73,7 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
+  max-width: 100vw;
 
   @media only screen and (max-width: 62.5em) {
     // tab-land
@@ -105,11 +106,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-
-  @media only screen and (min-width: 20em) {
-    // big desktop
-    overflow-x: scroll;
-  }
 }
 
 main {
