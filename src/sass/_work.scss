@@ -26,27 +26,27 @@
 
   .work-box {
     &:nth-child(1) {
-      background: linear-gradient(180deg, #BCBDFF 0%, #4E4E86 100%);
+      background: linear-gradient(150deg, #b1e5f9, #f4d2fe);
     }
 
     &:nth-child(2) {
-      background: linear-gradient(180deg, #9BE7FF 0%, #4582e4 100%);
+      background: linear-gradient(180deg, #bcbdff 0%, #4e4e86 100%);
     }
 
     &:nth-child(3) {
-      background: linear-gradient(75deg, #f3cbab, #feedca);
+      background: linear-gradient(180deg, #9be7ff 0%, #4582e4 100%);
     }
 
     &:nth-child(4) {
-      background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+      background: linear-gradient(75deg, #f3cbab, #feedca);
     }
 
     &:nth-child(5) {
-      background: linear-gradient(to bottom, #efa971, #e4cafe);
+      background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
     }
 
     &:nth-child(6) {
-      background: linear-gradient(to right, #b1e5f9, #f4d2fe);
+      background: linear-gradient(to bottom, #efa971, #e4cafe);
     }
 
     &:nth-child(7) {
